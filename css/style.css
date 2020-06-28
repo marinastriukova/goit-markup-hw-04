@@ -359,11 +359,14 @@ header{
 
 /*Social*/
 .social .social-items:hover,
-.social .social-items:focus{
+.social .social-items:focus,
+.social-items:hover .social-icon,
+.social-items:focus .social-icon{
     background-color: var(--accent-color);
     border-radius: 75%;
     height: 44px;
     width: 44px;
+    fill: var(--white-color);
 }
 
 .social{
@@ -375,6 +378,10 @@ header{
     margin-bottom: 24px;
 }
 
+.social .social-items a{
+    display: block;
+}
+
 .social-items + .social-items{
     margin-left: 10px;
 }
@@ -382,12 +389,7 @@ header{
 .social-icon{
     width: 44px;
     height: 44px;
-    fill: #afb1b8
-}
-
-.social-icon:hover,
-.social-icon:focus{
-    fill: var(--white-color);
+    fill: #afb1b8;
 }
 
 
@@ -576,7 +578,6 @@ footer{
     justify-content: center;
     margin-top: 93px;
     margin-bottom: 50px;
-    
 }
 
 .projects .projects-list{
