@@ -25,6 +25,8 @@ body{
     font-weight: 400;
     letter-spacing: 0.03em;
     max-width: 1600px;
+    margin: 0;
+    padding: 0;
 }
 
 ul a,
@@ -421,7 +423,6 @@ header{
 
 .client .client-link:hover,
 .client .client-link:focus{
-    color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
